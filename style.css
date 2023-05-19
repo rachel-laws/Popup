@@ -158,15 +158,16 @@ body {
 }
 
 .infoBox {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     gap: 0.5rem;
 
     width: clamp(250px, 50vw, 23rem);
     min-height: 25rem;
-    padding: 0 calc(0.5rem + 5vw) 2rem;
+    padding: 1.5rem calc(0.5rem + 5vw) 2rem;
 
     outline: 2px solid var(--base-color);
     outline-offset: 3px;
@@ -176,12 +177,13 @@ body {
 }
 
 .closeButton {
+    position: absolute;
     align-self: flex-end;
     width: 2rem;
     height: 2rem;
     z-index: 999;
-    margin-top: 0.5rem;
-    margin-right: -1.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
 
     font-size: 1.5rem;
     color: var(--text-color);
@@ -203,7 +205,7 @@ body {
 
 .infoPriceAmount,
 .infoTitle {
-    font-size: clamp(1.8rem, 6vw, 2.6rem);
+    font-size: clamp(1.4rem, 3vw, 2rem);
 }
 
 .infoTitle {
@@ -212,8 +214,6 @@ body {
 }
 
 .infoIngredients {
-    align-self: start;
-
     font-size: 1.1rem;
     text-decoration: none;
     font-style: italic;
