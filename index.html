@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu Popup Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Menu Popup Demo</h1>
+      <div class="foodItem">
+        <h2>Marble Cake</h2>
+        <div class="imgZoom">
+          <img
+            src="./images/cakeslice.png"
+            alt="Slice of marble cake with chocolate frosting" />
+        </div>
+        <button id="foodItem__button" class="foodItem__button">
+          <span class="foodItem__price">$8</span>
+          <span class="foodItem__info">
+            More Info
+            <i class="bi bi-arrow-right-circle"></i>
+          </span>
+        </button>
+      </div>
+      <div id="infoPopup" class="infoPopup"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
