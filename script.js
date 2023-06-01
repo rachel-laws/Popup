@@ -42,7 +42,7 @@ infoButton.addEventListener('click', event => {
     'infoIngredients',
     'View Ingredients'
   );
-  infoIngredients.href = 'https://fontawesome.com/';
+  infoIngredients.href = '';
   infoIngredients.title = 'See full ingredients list';
 
   // Price
